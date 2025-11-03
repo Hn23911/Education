@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo Dục Trực Tuyến</title>
+    <!--aos css-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--icon cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--custom style-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    
+<!--header-->
+<header id="mainHeader">
+    <div class="container">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <strong>Học Trực Tuyến</strong>
+        </div>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Danh mục</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Bài viết</a></li>
+                <li><a href="#" class="commonBtn">Đăng ký</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--hero section-->
+<section class="hero">
+    <div class="hero-text" data-aos="fade-right" >      
+        <h1 class="heading heroHeading">Đầu tư vào <br> Kiến thức và <br> <span> Tương lai của bạn</h1>
+            <p>Các chương trình học trực tuyến được phát triển để mang đến giải pháp 
+            học tập đa phương tiện hiệu quả.</p>
+
+        <div class="starts">
+            <button class="commonBtn" style="height: 45px;">Liên hệ</button>
+            <div>
+                <span id="courseCount">0</span>+<br>
+                <span class="counterText">Khóa học nghề nghiệp</span>
+            </div>
+            <div>
+                <span id="studentCount">0</span>+<br>
+                <span class="counterText">Học viên của chúng tôi</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="hero-image" data-aos="fade-left" >  
+        <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <img src="images/user.png" class="userImage">
+        <!-- <img src="images/chart.png" class="heroIcon1">
+        <img src="images/activeUser.png" class="heroIcon2"> -->
+    </div>
+</section>
+
+<!--course Category-->
+<section class="courseSection">
+    <h1 class="heading" data-aos="zoom-in">Khám phá các <br> <span>Khóa học hàng đầu</span></h1>
+    <div class="courses" data-aos="fade-right">
+        <div class="course">
+            <i class="fa-brands fa-uikit"></i>
+            <span>Thiết kế<br> UI/UX</span>
+            <hr>
+        </div>
+
+        <div class="course">
+            <i class="fa-solid fa-code"></i>
+            <span>Phát triển<br> Website</span>
+            <hr>
+        </div>
+
+        <div class="course">
+            <i class="fa-brands fa-uikit"></i>
+            <span>Thiết kế<br> Giao diện</span>
+            <hr>
+        </div>
+
+        <div class="course">
+            <i class="fa-brands fa-readme"></i>
+            <span>Học tập<br> Thực tiễn</span>
+            <hr>
+        </div>
+        <div>
+            <button class="commonBtn" style="height: 45px; margin-top: 65px;">
+                <i class="fa-solid fa-arrow-right"></i></button>
+                <br><br>
+                <span class="browseAll">Xem tất cả</span>
+        </div>
+    </div>
+</section>
+
+<!--about section-->
+
+<section class="aboutSection">
+    <div class="image-box" data-aos="zoom-in">
+        <div class="purple-corner"></div>
+        <img src="images/about.jpg">
+    </div>
+    <div class="text-box" data-aos="fade-right">
+        <!-- <small>VỀ CHÚNG TÔI</small> -->
+        <h1 class="heading">Chúng tôi cung cấp nền tảng <br> <span>Học trực tiếp chất lượng</span></h1>
+        <span class="highlight">Công ty số sáng tạo & chuyên nghiệp!</span>
+        <p>Các chương trình học trực tuyến được thiết kế để cung cấp giải pháp học tập đa phương tiện phù hợp với nhu cầu của bạn.</p>
+        <p>Hệ thống được xây dựng giúp người học dễ dàng tiếp cận kiến thức mọi lúc, mọi nơi.</p>
+        <button class="commonBtn">ĐỌC THÊM</button>
+    </div>
+</section>
+
+<!--course card section-->
+<section class="courses-section">
+    <h1 class="heading" data-aos="zoom-in">Bạn có thể học mọi thứ, <br> Khám phá
+    <span>Khóa học nổi bật</span></h1>
+    <p class="desc" data-aos="zoom-in">
+        Các chương trình học trực tuyến được phát triển để mang đến giải pháp học tập đa phương tiện hiệu quả.
+    </p>
+
+<div class="courses" data-aos="fade-right">
+    <!--card 1-->
+    <div class="course-card">
+        <img src="images/c1.jpg">
+        <p class="lesson">60 Bài học</p>
+        <h3>Lập trình cơ bản với HTML CSS</h3>
+        <div class="price">
+            <span class="new">2.000.000₫</span>
+            <span class="old">5.000.000₫</span>
+        </div>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>4.9 Đánh giá</span>
+        </div>
+        <div class="bottom">
+            <div class="students">
+                <i class="fa-solid fa-users"></i> 900+ Học Viên
+            </div>
+            <button class="commonBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!--card 2-->
+    <div class="course-card">
+        <img src="images/c2.jpg">
+        <p class="lesson">20 Bài học</p>
+        <h3>Khóa học cơ bản về JavaScript</h3>
+        <div class="price">
+            <span class="new">1.500.000₫</span>
+            <span class="old">2.500.000₫</span>
+        </div>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>4.9 Đánh giá</span>
+        </div>
+        <div class="bottom">
+            <div class="students">
+                <i class="fa-solid fa-users"></i> 900+ Học viên
+            </div>
+            <button class="commonBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!--card 3-->
+    <div class="course-card">
+        <img src="images/c3.jpg">
+        <p class="lesson">60 Bài học</p>
+        <h3>Lập trình cơ bản với HTML CSS</h3>
+        <div class="price">
+            <span class="new">2.000.000₫</span>
+            <span class="old">5.000.000₫</span>
+        </div>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>4.9 Đánh giá</span>
+        </div>
+        <div class="bottom">
+            <div class="students">
+                <i class="fa-solid fa-users"></i> 900+ Học viên
+            </div>
+            <button class="commonBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!--card 4-->
+    <div class="course-card">
+        <img src="images/c4.jpg">
+        <p class="lesson">20 Bài học</p>
+        <h3>Khóa học cơ bản về JavaScript</h3>
+        <div class="price">
+            <span class="new">1.500.000₫</span>
+            <span class="old">2.500.000₫</span>
+        </div>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>4.9 Đánh giá</span>
+        </div>
+        <div class="bottom">
+            <div class="students">
+                <i class="fa-solid fa-users"></i> 900+ Học viên
+            </div>
+            <button class="commonBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!--card 5-->
+    <div class="course-card">
+        <img src="images/c5.jpg">
+        <p class="lesson">60 Bài học</p>
+        <h3>Lập trình cơ bản với HTML CSS</h3>
+        <div class="price">
+            <span class="new">2.000.000₫</span>
+            <span class="old">5.000.000₫</span>
+        </div>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>4.9 Đánh giá</span>
+        </div>
+        <div class="bottom">
+            <div class="students">
+                <i class="fa-solid fa-users"></i> 900+ Học viên
+            </div>
+            <button class="commonBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!--card 6-->
+    <div class="course-card">
+        <img src="images/c6.jpg">
+        <p class="lesson">20 Bài học</p>
+        <h3>Khóa học cơ bản về JavaScript</h3>
+        <div class="price">
+            <span class="new">1.500.000₫</span>
+            <span class="old">2.500.000₫</span>
+        </div>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>4.9 Đánh giá</span>
+        </div>
+        <div class="bottom">
+            <div class="students">
+                <i class="fa-solid fa-users"></i> 900+ Học viên
+            </div>
+            <button class="commonBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- cta section -->
+ <section class="cta-section">
+    <div class="cta-text" data-aos="fade-right">
+        <h2>Sẵn sàng để bắt đầu học?</h2>
+        <p>Chúng tôi luôn đồng hành và hỗ trợ bạn trên con đường học tập và phát triển bản thân.</p>
+    </div>
+    <button class="cta-button" data-aos="fade-left">NÂNG CẤP</button>
+ </section>
+
+<!-- price section -->
+<section class="priceSection">
+    <small data-aos="zoom-in">GÓI ƯU ĐÃI</small>
+    <div class="heading" data-aos="zoom-in">
+        Dành cho <span>Bạn lựa chọn</span>
+    </div>
+    <div class="container">
+        <div class="pricing-card" data-aos="fade-right">
+            <div class="plan-title">Cơ bản</div>
+            <div class="plan-description">Phù hợp cho người mới bắt đầu học trực tuyến</div>
+            <ul class="plan-features">
+                <li>Thiết kế đồ họa</li>
+                <li>Thiết kế website</li>
+                <li>UI/UX</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <div class="price">500.000₫ <span style="font-size: 0.5rem;
+            font-weight: normal;">Tháng</span><br>
+            <button class="commonBtn">NÂNG CẤP</button>
+            </div>
+        </div>
+
+        <div class="pricing-card featured" data-aos="fade-down">
+        <div class="plan-title">Tiêu chuẩn</div>
+        <div class="plan-description">Phù hợp cho người học nghiêm túc muốn nâng cao kỹ năng</div>
+        <ul class="plan-features">
+            <li>Thiết kế đồ họa</li>
+            <li>Thiết kế website</li>
+            <li>UI/UX</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <div class="price">1.000.000₫ <span style="font-size: 0.5rem;
+        font-weight: normal;">Tháng</span><br>
+        <button class="commonBtn">NÂNG CẤP</button>
+        </div>
+    </div>
+
+        <div class="pricing-card" data-aos="fade-left">
+        <div class="plan-title">Chuyên nghiệp</div>
+        <div class="plan-description">Dành cho người học chuyên sâu và muốn chứng nhận</div>
+        <ul class="plan-features">
+            <li>Thiết kế đồ họa</li>
+            <li>Thiết kế website</li>
+            <li>UI/UX</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <div class="price">1.500.000₫ <span style="font-size: 0.5rem;
+        font-weight: normal;">Tháng</span><br>
+        <button class="commonBtn">NÂNG CẤP</button>
+        </div>
+    </div>
+
+    </div>
+
+</section>
+
+<!-- testimonial section -->
+ <section class="testimonialSection">
+    <small data-aos="zoom-in">Phản hồi của học viên</small>
+    <h2 class="heading" data-aos="zoom-in">Mọi người <span>Nói gì về chúng tôi</span>
+    </h2>
+
+    <div class="testimonial-container" data-aos="fade-right">
+        <div class="testimonial-wrapper" id="testimonialWrapper">
+            <!-- slide 1 -->
+            <div class="testimonial">
+                <div class="top-section">
+                    <div class="image">
+                        <img src="images/user-1.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Nguyễn Tuấn Anh</h3>
+                        <p class="positon">Giám đốc điều hành</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span style="color: #333;">5.0</span>
+                        </div>
+                        <div class="quote-icon1"></div>
+                    </div>
+                    <p class="bottom-text">
+                        Nền tảng học trực tuyến tuyệt vời, giúp tôi dễ dàng quản lý khóa học và học viên mọi lúc, mọi nơi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="top-section">
+                    <div class="image">
+                        <img src="images/user-2.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Nguyễn Ngọc Huệ</h3>
+                        <p class="positon">Giám đốc điều hành</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span style="color: #333;">5.0</span>
+                        </div>
+                        <div class="quote-icon1"></div>
+                    </div>
+                    <p class="bottom-text">
+                        Nền tảng học trực tuyến đáp ứng được nhu cầu người dùng, giúp mọi người học tiếp cận nhiều kiến thức bổ ích.
+                    </p>
+                </div>
+            </div>
+
+             <!-- slide 2 -->
+            <div class="testimonial">
+                <div class="top-section">
+                    <div class="image">
+                        <img src="images/user-3.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Nguyễn Anh Tuấn</h3>
+                        <p class="positon">Giám đốc điều hành</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span style="color: #333;">5.0</span>
+                        </div>
+                        <div class="quote-icon1"></div>
+                    </div>
+                    <p class="bottom-text">
+                        Nền tảng học trực tuyến tuyệt vời, giúp tôi dễ dàng quản lý khóa học và học viên mọi lúc, mọi nơi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="top-section">
+                    <div class="image">
+                        <img src="images/user-4.jpg">
+                    </div>
+                    <div class="info">
+                        <h3>Nguyễn Ngọc Hân/h3>
+                        <p class="positon">Giám đốc điều hành</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span style="color: #333;">5.0</span>
+                        </div>
+                        <div class="quote-icon1"></div>
+                    </div>
+                    <p class="bottom-text">
+                        Nền tảng học trực tuyến đáp ứng được nhu cầu người dùng, giúp mọi người học tiếp cận nhiều kiến thức bổ ích.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="moveToSlide(0)"></span>
+            <span class="dot" onclick="moveToSlide(1)"></span>
+        </div>
+    </div>
+</section>
+
+<!-- instructor section -->
+ <section class="instructor-section">
+    <div class="instructor-container">
+        <div class="instructor-image" data-aos="fade-right">
+            <img src="images/instructor.png">
+        </div>
+        <div class="instructor-content" data-aos="fade-left">
+            <h1 class="heading">Trở thành một <span>Giảng viên</span></h1>
+            <p>Chia sẻ kiến thức, xây dựng khóa học và truyền cảm hứng cho hàng ngàn học viên.</p>
+        <a class="commonBtn">Bắt đầu giảng dạy ngay hôm nay</a>
+        </div>
+    </div> 
+ </section>
+
+ <button id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+ </button>
+
+ <!-- footer -->
+  <footer>
+    <div class="newsletter">
+        <h2>Đăng ký nhận thông tin</h2>
+        <p>Để nhận các cập nhật mới nhất </p>
+        <div class="form-container">
+            <input type="email" placeholder="Email Address...">
+            <button class="cta-button">ĐĂNG KÝ NGAY</button>
+        </div>
+    </div>
+
+    <!-- footer bottom -->
+     <div class="footer-bottom">
+        <div class="footer-logo">
+            <i class="fa-solid fa-graduation-cap"></i> <strong>Học Trực Tuyến</strong>
+        </div>
+        <div class="footer-links">
+            <a href="#">Trang chủ</a>
+            <a href="#">Về chúng tôi</a>
+            <a href="#">Dịch vụ</a>
+            <a href="#">Trang</a>
+            <a href="#">Blog</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        
+     </div>
+     <div class="copyright">
+        Bản quyền @ 2025 <a href="#" style="color: var(--secondary-color);
+        text-decoration: none;">Nguyen Thu Hien</a>.
+     </div>
+
+  </footer>
+
+<!--aos js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!--custom js-->
+<script src="js/custom.js"></script>
+</body>
+</html>
