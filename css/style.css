@@ -1,4 +1,7 @@
 /* CSS chung */
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
 :root {
     --primary-color: #7b5fff;
     --secondary-color: #ff7b00;
@@ -12,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 body {
@@ -119,7 +122,12 @@ nav li a:hover{
 }
 
 .hero-text{max-width: 600px;}
-.heroHeading{font-size: 4rem;}
+.heroHeading{
+    /* font-family: 'Be Vietnam Pro', sans-serif; */
+    font-size: 4rem;
+    /* font-weight: 800;
+    line-height: 1.15; */
+}
 .heading span{color: var(--secondary-color);}
 #courseCount,
 #studentCount {
