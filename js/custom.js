@@ -23,22 +23,37 @@ animateCounter('courseCount', 100, 50);
 animateCounter('studentCount', 1000, 20);
 
 // Trình chiếu đánh giá (testimonial slider)
-const wrapper = document.getElementById('.testimoialwrapper');
+const wrapper = document.getElementById('testimonialWrapper');
 const dots = document.querySelectorAll('.dot');
 let currentSlide = 0;
-const totalSlides = 2;
+const totalSlides = dots.length;
+let autoSlideTimer = null;
 
 function moveToSlide(index) {
     currentSlide = index;
-    const slideWidth = wrapper.clidentWidth;
     wrapper.style.transform = `translateX(-${index * 100}%)`;
     dots.forEach(dot => dot.classList.remove('active'));
     dots[index].classList.add('active');
-    setInterval(() =>{
-    currentSlide = (currentSlide + 1) % totalSlides;
-    moveToSlide(currentSlide);
+}
+function startAutoSlide() {
+    // luôn clear timer cũ trước khi tạo mới, tránh chạy chồng nhiều interval
+    clearInterval(autoSlideTimer);
+    autoSlideTimer = setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        moveToSlide(currentSlide);
     }, 5000);
 }
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        moveToSlide(index);
+        startAutoSlide(); // reset timer khi người dùng click
+    });
+});
+
+// Bắt đầu tự động chạy khi load trang
+moveToSlide(0); // hiển thị slide đầu tiên
+startAutoSlide();
 
 // Sự kiện khi cuộn trang
 window.onscroll = () => {

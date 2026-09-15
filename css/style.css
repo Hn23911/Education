@@ -547,106 +547,160 @@ ul.plan-features li:before {
     color: #7a4aff;
     border: none;
 }
-
-/* testimonial section */
+/* section đánh giá của học viên */
 .testimonialSection{
+    padding: 80px 20px 90px;
+    background: #f8f9ff;
     text-align: center;
-    padding: 50px;
+    box-sizing: border-box;
+    overflow: hidden; 
+    /* chan tran ra ngoai section */
 }
 
 .testimonial-container {
-    max-width: 1000px;
-    margin: auto;
-    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
     overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .testimonial-wrapper {
     display: flex;
-    transition: trasform 0.6s ease;
+    width: 100%;
+    transition: transform 0.5s ease;
 }
 
-.testimonial {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-    margin: 10px;
-    flex: 0 0 calc(50% - 20px);
+.testimonial-slide {
+    min-width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    /* minmax(0, 1fr) để cột không bị nới rộng quá khung chứa */
+    gap: 28px;
+    width: 100%;
+}
+ /* card */
+ .testimonial-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.08);
+    padding: 32px 28px 36px;
     display: flex;
+    position: relative;
     flex-direction: column;
-    justify-content: space-between;
+    transition: 0.3s;
+    border: 1px solid rgba(99, 102, 241, 0.06);
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
 }
 
-.top-section {
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(99, 102, 241, 0.12);
+}
+
+.quote-icon {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-size: 48px;
+    color: rgba(99, 102, 241, 0.12);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    line-height: 1;
+}
+/* noi dung danh gia */
+.testimonial-card blockquote {
+    margin: 0 0 24px 0;
+    color: #2d2d3a;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    flex-grow: 1;
+    text-align: left;
+    overflow-wrap: break-word;
+    /* tranh tran khi chu dai khong co khoang trang */
+    word-break: break-word;
+    white-space: normal;
+}
+/* phan nguoi dung */
+.testimonial-card figcaption {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    gap: 14px;
+    border-top: 1px solid #f0f0f7;
+    padding-top: 20px;
+    margin-top: auto;
+    text-align: left;
 }
 
-.image{flex-shrink: 0;}
-.image img {
-    width: 60px;
-    height: 60px;
+.testimonial-card figcaption img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
-.info {
-    margin-left: 15px;
-    text-align: left;
-    flex-grow: 1;
-    position: relative;
-}
-
-.info h3 {
-    font-size: 16px;
+.user-info h3 {
+    font-size: 1rem;
     font-weight: 600;
+    margin: 0;
+    color: #1a1a2e;
 }
 
-.info .position {
-    font-size: 14px;
-    margin: 2px 0 8px;
+.position {
+    font-size: 0.84rem;
+    color: #6b7280;
+    margin: 2px 0 0;
 }
 
 .stars {
-    color: var(--secondary-color);
-    font-size: 16px;
+    margin-top: 4px;
+    color: #f59e0b;
+    font-size: 0.9rem;
 }
 
-.quote-icon1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 4rem;
-    color: var(--secondary-color);
+.stars span {
+    color: #374151;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 6px;
 }
-
-.bottom-text {
-    font-size: 14px;
-    line-break: 1.5;
-    text-align: left;
-}
-
+/* dots */
 .dots {
-    text-align: center;
-    margin-top: 20px;   
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;   
 }
 
 .dot {
-    display: inline-block;
     width: 10px;
     height: 10px;
-    background: #ddd;
+    background: #d1d5db;
     border-radius: 50%;
-    margin: 0 5px;
+    transition: 0.25s;
     cursor: pointer;
 }
 
 .dot.active {
-    background: var(--secondary-color);
+    background: #6366f1;
+    transform: scale(1.25);
 }
-
+/*mobile*/
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
 /* instructor section */
 .instructor-section {
     padding: 60px 20px;
